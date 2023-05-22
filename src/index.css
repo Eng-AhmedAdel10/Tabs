@@ -1,0 +1,153 @@
+/* *********************public style********************* */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #f1f5f8;
+  color: #102a42;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+/* *********************container********************* */
+.container {
+  margin: 3rem auto 0;
+  width: 90vw;
+  max-width: 1170px;
+}
+.title {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+.title h2 {
+  font-size: 2.5rem;
+  letter-spacing: 0.25rem;
+  line-height: 1;
+  text-transform: capitalize;
+  margin-bottom: 0.75rem;
+}
+.underline {
+  background-color: #2caeba;
+  width: 5rem;
+  height: 0.25rem;
+  margin: 0 auto;
+}
+
+/* ********************tabs******************** */
+.btn {
+  background-color: transparent;
+  padding: 0.25rem 2.25rem;
+  font-size: 1.25rem;
+  border: 0;
+  margin-bottom: 1rem;
+  display: block;
+  letter-spacing: 0.1rem;
+  line-height: 1;
+  cursor: pointer;
+  outline: 0;
+  transition: all 0.25s linear;
+}
+.btn:hover {
+  color: #2caeba;
+  box-shadow: -2px 0px 0px #2caeba;
+}
+.btn.active {
+  box-shadow: -2px 0px 0px #2caeba;
+  color: #2caeba;
+}
+@media (max-width: 767px) {
+  .container-btns {
+    margin-bottom: 3rem;
+  }
+  .btn {
+    display: inline-block;
+  }
+  .btn.active {
+    box-shadow: inset 0px -2px 0px 0px #2caeba;
+  }
+}
+@media (min-width: 768px) {
+  .tabs {
+    display: flex;
+    align-items: flex-start;
+  }
+  .container-btns {
+    margin-right: 4rem;
+  }
+}
+
+/* ******************job-info******************* */
+.job-info {
+  flex: 1;
+}
+.job-title {
+  font-size: 1.75rem;
+  font-weight: 400;
+  letter-spacing: 0.25rem;
+  text-transform: capitalize;
+  margin-bottom: 1rem;
+  line-height: 1;
+}
+.job-company {
+  padding: 0.25rem 0.5rem;
+  margin-bottom: 1rem;
+  border-radius: 0.25rem;
+  font-size: 1rem;
+  background-color: #dae2ec;
+  color: #617d98;
+  display: inline-block;
+  letter-spacing: 0.1rem;
+}
+.job-date {
+  font-size: 1rem;
+  text-transform: capitalize;
+  letter-spacing: 0.1rem;
+  color: #617d98;
+  margin-bottom: 1.25rem;
+}
+.job-desc {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.25rem;
+}
+.desc-icon {
+  margin-right: 2rem;
+  color: #2caeba;
+  font-size: 1rem;
+}
+.job-desc p {
+  line-height: 1.5;
+  color: #324d67;
+}
+.info-btn {
+  margin-top: 2.5rem;
+  background-color: #2caeba;
+  font-size: 0.875rem;
+  padding: 0.6rem 3.5rem;
+  border: 0;
+  border-radius: 0.25rem;
+  color: #bff8fd;
+  font-weight: 700;
+  line-height: 1;
+  cursor: pointer;
+  text-transform: uppercase;
+  margin: 3rem auto 0;
+  display: block;
+  letter-spacing: 0.1rem;
+  transition: all 0.3s linear;
+}
+.info-btn:hover {
+  color: #044e53;
+  background: #88ebf2;
+}
